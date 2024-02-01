@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="#" id="meta"></h1>
+    <h1 class="#" id="meta1"></h1>
+    <h1 class="#" id="meta2"></h1>
+    <script>
+        let x = prompt("Ug oruul")
+        let y = prompt("Ug oruul")
+        let z = prompt("Ug oruul")
+        // let a = "javascript"
+        b = 0
+        c = 0
+        d = 0
+        for(let i=0; i<x.length; i++){
+            if(x[i]=="a"){
+                b++
+            }
+        }
+        for(let i in y){
+            if(y[i]=='a'){
+                c++
+            }
+        }
+        for(let i of z){
+            if(i=="a"){
+                d++
+            }
+        }
+        document.getElementById('meta').innerHTML = b
+        document.getElementById('meta1').innerHTML = c
+        document.getElementById('meta2').innerHTML = d
+        console.log(b,c,d)
+        
+        // let a = "javascript"
+        // b = 0
+        // c = 0
+        // d = 0
+        // for(let i=0; i<a.length; i++){
+        //     if(a[i]=="a"){
+        //         b++
+        //     }
+        // }
+        // for(let i in a){
+        //     if(a[i]=='a'){
+        //         c++
+        //     }
+        // }
+        // for(let i of a){
+        //     if(i=="a"){
+        //         d++
+        //     }
+        // }
+        // document.getElementById('meta').innerHTML = b
+        // document.getElementById('meta1').innerHTML = c
+        // document.getElementById('meta2').innerHTML = d
+        // console.log(b,c,d)
+    </script>
+</body>
+</html>

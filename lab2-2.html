@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main{
+            background-color: paleturquoise;
+        }
+        canvas{
+            border: 4px dotted slateblue;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canv" height="600" width="600"></canvas>
+
+    <script>
+        var canvas=document.getElementById('canv');
+        var ctx=canvas.getContext('2d');
+        var x = 255;
+        var y = 560;
+        ctx.beginPath();
+        ctx.rect(x, y, 90, 20);
+        ctx.fillStyle='red';
+        ctx.fill()
+        ctx.closePath();
+
+
+        function saad(a, b, orgon, ondor){
+            ctx.beginPath();
+            ctx.rect(a, b, 84, 40);
+            ctx.fillStyle='blue';
+            ctx.fill();
+            ctx.closePath();
+        }
+
+        for( let a=30; a<=600; a+=114){
+            for (let b=20; b<=220; b+=65){
+                saad(a,b);
+            }
+        }
+    </script>
+</body>
+</html>

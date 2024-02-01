@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="sum1"></h1>
+    <h1 id="sum2"></h1>
+
+    <script>
+        let in1 = prompt("4 orontoi too oruul")
+        function sum1(a){
+            return (((in1%10) * Math.floor((in1%100)/10)) * (Math.floor((in1%1000)/100) * Math.floor(in1/1000)))
+            
+        }
+        document.getElementById('sum1').innerHTML = sum1(in1)
+        
+        let in2 = prompt("dahin 4 orontoi too oruul")
+        const sum2 = function(a){
+            return (((in2%10) * Math.floor((in2%100)/10)) * (Math.floor((in2%1000)/100) * Math.floor(in2/1000)))
+            
+        }
+        document.getElementById('sum2').innerHTML = sum2(in2)
+    </script>
+</body>
+</html>
